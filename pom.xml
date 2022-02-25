@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.stephane.pieceofcode</groupId>
-    <artifactId>piece of code</artifactId>
+    <artifactId>piece-of-code</artifactId>
     <version>1.0.0</version>
 
     <properties>
@@ -101,40 +101,6 @@
             <artifactId>log4j-slf4j-impl</artifactId><!-- bridge to slf4j-->
             <version>${log4j.version}</version>
         </dependency>
-        <!--
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-jdk14</artifactId>
-            <version>${slf4j-api.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>${log4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>${log4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j-impl</artifactId>
-            <version>${log4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.32</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>slf4j-api</artifactId>
-                    <groupId>org.slf4j</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        -->
-
     </dependencies>
     <build>
         <plugins>
@@ -155,23 +121,6 @@
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
-            <!-- javaDoc -->
-            <!--<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.build.sourceDirectory}/javadoc</outputDirectory>
-                            <destDir>apidocs</destDir>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>-->
             <!-- coverage -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
