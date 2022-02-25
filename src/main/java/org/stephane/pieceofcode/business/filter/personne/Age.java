@@ -1,4 +1,4 @@
-package org.stephane.pieceofcode.business.filter;
+package org.stephane.pieceofcode.business.filter.personne;
 
 import org.stephane.pieceofcode.entities.Personne;
 
@@ -6,8 +6,8 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.function.Predicate;
 
-public class PersonneAgeFiltering {
-    private PersonneAgeFiltering() {
+public class Age {
+    private Age() {
     }
 
     public static Predicate<Personne> isAdult() {
