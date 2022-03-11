@@ -1,4 +1,3 @@
-/.idea/jarRepositories.xml
-/.idea/uiDesigner.xml
 /target/
-/.idea/sonarlint/
+/.idea
+/.idea/

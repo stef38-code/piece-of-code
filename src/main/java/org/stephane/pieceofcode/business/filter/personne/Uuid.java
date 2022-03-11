@@ -4,7 +4,7 @@ import org.stephane.pieceofcode.entities.Personne;
 
 import java.util.function.Predicate;
 
-public class Uuid {
+public class Uuid{
     private Uuid() {
     }
 

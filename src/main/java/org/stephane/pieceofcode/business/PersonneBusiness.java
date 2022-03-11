@@ -8,14 +8,14 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-public class PersonneFilter {
+public class PersonneBusiness {
     public static Age AGE;
     public static Uuid UUID;
-    private PersonneFilter() {
+    private PersonneBusiness() {
     }
 
     public static List<Personne> filter(List<Personne> employees,
-                                        Predicate<Personne> predicate) {
+                                        Predicate<? super Personne> predicate) {
         return employees.stream()
                 .filter(predicate)
                 .collect(Collectors.<Personne>toList());
